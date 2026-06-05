@@ -5,14 +5,31 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [
+	{
+		"id": "unsloth-qwen3.6-128k:latest",
+		"contextWindow": 128000,
+		"compaction": {
+			"enabled": true,
+			"threshold": 0.85,
+			"keepRecentTokens": 3200
+		}
+	},
+	{
+		"id": "unsloth-qwen3.6-96k:latest",
+		"contextWindow": 98304
+	},
 	{ 
 		"id": "qwen3.6-v100:latest",
-		"contextWindow": 42000
+		"contextWindow": 65536
+	},
+	{
+		"id": "unsloth-qwen3.6-225k:latest",
+		"contextWindow": 225000
 	},
 
         {
-          "id": "hf.co/unsloth/Qwen3.6-27B-MTP-GGUF:UD-Q5_K_XL",
-          "contextWindow": 65536
+		"id": "hf.co/unsloth/Qwen3.6-27B-MTP-GGUF:UD-Q5_K_XL",
+		"contextWindow": 225000
         },
         { "id": "qwen3.6:27b", "contextWindow": 32768 },
         { "id": "gemma4:26b", "contextWindow": 32768 }

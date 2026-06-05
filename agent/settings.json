@@ -1,7 +1,7 @@
 {
   "lastChangelogVersion": "0.78.1",
   "defaultProvider": "ollama",
-  "defaultModel": "qwen3.6-v100:latest",
+  "defaultModel": "unsloth-qwen3.6-128k:latest",
   "compaction": {
     "reserveTokens": 4096
   },

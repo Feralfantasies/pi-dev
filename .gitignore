@@ -9,3 +9,4 @@ agent/auth.json
 
 # Node modules — installed via npm ci
 agent/npm/node_modules/
+.turnlog/
