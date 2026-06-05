@@ -1,0 +1,22 @@
+{
+  "providers": {
+    "ollama": {
+      "baseUrl": "http://192.168.1.50:11434/v1",
+      "api": "openai-completions",
+      "apiKey": "ollama",
+      "models": [
+	{ 
+		"id": "qwen3.6-v100:latest",
+		"contextWindow": 42000
+	},
+
+        {
+          "id": "hf.co/unsloth/Qwen3.6-27B-MTP-GGUF:UD-Q5_K_XL",
+          "contextWindow": 65536
+        },
+        { "id": "qwen3.6:27b", "contextWindow": 32768 },
+        { "id": "gemma4:26b", "contextWindow": 32768 }
+      ]
+    }
+  }
+}

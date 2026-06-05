@@ -1,0 +1,16 @@
+{
+  "lastChangelogVersion": "0.78.1",
+  "defaultProvider": "ollama",
+  "defaultModel": "qwen3.6-v100:latest",
+  "compaction": {
+    "reserveTokens": 4096
+  },
+  "packages": [
+    "npm:lsp-pi",
+    "npm:pi-search-hub",
+    "npm:pi-lens",
+    "npm:pi-goal-x",
+    "npm:pi-turnlog",
+    "npm:@latent-variable/pi-auto-continue"
+  ]
+}
