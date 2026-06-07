@@ -5,7 +5,7 @@
     "@latent-variable/pi-auto-continue": "^0.1.0",
     "lsp-pi": "^1.0.5",
     "pi-goal-x": "^0.18.6",
-    "pi-lens": "^3.8.47",
+    "pi-lens": "^3.8.50",
     "pi-search-hub": "^2.1.0",
     "pi-turnlog": "^0.1.2"
   }

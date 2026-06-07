@@ -4,12 +4,20 @@
 - Do not rely solely on your internal training data for API syntax, use the web_read tool to fetch the raw markdown of relevant documentation pages before writing any code.
 - If you encounter a bug or error, use the web search tool to look for community solutions or issue trackers.
 
-## Ways of Working
+## Workflow
 
+### Commits & Pre-commit Hooks
+- **Verify pre-commit success:** After every commit, check the output to confirm the pre-commit hook passed. If any hook step failed (fmt, clippy, tests, etc.), fix the reported issues before proceeding. This applies to ALL repositories.
 - **Branch workflow:** Before making any changes to a repository, check out the `main` branch first, then create a new feature branch named `feature/{descriptive-name}`. All work must be done on the feature branch.
 - **Protected main branch:** Never push changes directly to `main` under any circumstances. Changes should only reach `main` through a pull/merge request from a feature branch.
+- **Verify push success:** After `git push`, read the output carefully to confirm refs were actually updated on the remote. A non-zero exit code means failure, but even exit code 0 can mean nothing was sent (e.g., `Everything up-to-date` when the branch doesn't exist remotely, or the branch wasn't created yet). If the output says `rejected`, `branch XYZ is not tracked`, or similar — fix the root cause and retry. Do not proceed assuming the push succeeded until you see the remote ref updated.
 
-## Networking
+## Home Assistant
+
+- **API Endpoint:** `http://192.168.1.40:8123/api`
+- **Auth Token:** `HA_TOKEN` environment variable (defined in `~/.bashrc`)
+- **Access:** Use `curl -H "Authorization: Bearer $HA_TOKEN" http://192.168.1.40:8123/api/...` for any Home Assistant queries (states, services, config, etc.)
+- **Components:** MQTT, Roborock, MyEnergi, Reolink, Matter, and others
 
 - **Traefik Debugging:** To diagnose routing or proxy issues, you can view Traefik's live computed state by running `curl -s http://192.168.1.2:8080/api/rawdata | jq`. Look for errors in the "routers" or "services" blocks.
 - **Traefik Configuration:** When checking how traffic is routed into the cluster, inspect the desired state using `kubectl get ingressroutes,middlewares,traefikservices -A -o yaml`.
