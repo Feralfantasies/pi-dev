@@ -3,7 +3,13 @@
   "defaultProvider": "ollama",
   "defaultModel": "use_this",
   "compaction": {
-    "reserveTokens": 4096
+    "enabled": true,
+    "reserveTokens": 16384,
+    "modelOverrides": {
+      "ollama/use_this": {
+        "reserveTokens": 33600
+      }
+    }
   },
   "packages": [
     "npm:lsp-pi",
