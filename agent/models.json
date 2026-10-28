@@ -7,12 +7,7 @@
       "models": [
 	{
 		"id": "use_this",
-		"contextWindow": 96000,
-		"compaction": {
-			"enabled": true,
-			"threshold": 0.85,
-			"keepRecentTokens": 3200
-		}
+		"contextWindow": 96000
 	}
       ]
     }
