@@ -7,7 +7,7 @@
     "reserveTokens": 16384,
     "modelOverrides": {
       "llamacpp/Qwen3.8-27B": {
-        "reserveTokens": 20000,
+        "reserveTokens": 25000,
         "keepRecentTokens": 8192
       },
       "ollama/use_this": {
