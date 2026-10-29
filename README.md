@@ -48,12 +48,9 @@ Version-controlled configuration for [pi](https://github.com/earendil-works/pi-c
 
 ## Model Configuration
 
-See `agent/models.json`. Currently configured with an **Ollama** provider (`192.168.1.50:11434`) with the following models:
+See `agent/models.json`. Configured with a **llama.cpp** provider (llama01 at `192.168.1.50:8000/v1`, OpenAI-compatible API) with:
 
-- `qwen3.6-v100:latest` (default, 42K context)
-- `hf.co/unsloth/Qwen3.6-27B-MTP-GGUF:UD-Q5_K_XL` (64K context)
-- `qwen3.6:27b` (32K context)
-- `gemma4:26b` (32K context)
+- `Qwen3.8-27B` (Q4_K_M, 65K context) — default model
 
 ## How to Recreate the Environment
 
