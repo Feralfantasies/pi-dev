@@ -1,5 +1,24 @@
 {
   "providers": {
+    "llamacpp": {
+      "baseUrl": "http://192.168.1.50:8000/v1",
+      "api": "openai-completions",
+      "apiKey": "llamacpp",
+      "compat": {
+        "supportsDeveloperRole": true,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        {
+          "id": "Qwen3.8-27B",
+          "name": "Qwen3.8-27B Q4_K_M (llama.cpp on V100)",
+          "reasoning": true,
+          "input": ["text"],
+          "contextWindow": 65000,
+          "maxTokens": 65000
+        }
+      ]
+    },
     "ollama": {
       "baseUrl": "http://192.168.1.50:11434/v1",
       "api": "openai-completions",
