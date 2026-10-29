@@ -18,17 +18,6 @@
           "maxTokens": 65000
         }
       ]
-    },
-    "ollama": {
-      "baseUrl": "http://192.168.1.50:11434/v1",
-      "api": "openai-completions",
-      "apiKey": "ollama",
-      "models": [
-	{
-		"id": "use_this",
-		"contextWindow": 96000
-	}
-      ]
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "lastChangelogVersion": "0.78.1",
-  "defaultProvider": "ollama",
-  "defaultModel": "use_this",
+  "defaultProvider": "llamacpp",
+  "defaultModel": "Qwen3.8-27B",
   "compaction": {
     "enabled": true,
     "reserveTokens": 16384,
@@ -9,9 +9,6 @@
       "llamacpp/Qwen3.8-27B": {
         "reserveTokens": 25000,
         "keepRecentTokens": 8192
-      },
-      "ollama/use_this": {
-        "reserveTokens": 33600
       }
     }
   },
