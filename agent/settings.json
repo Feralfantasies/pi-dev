@@ -2,6 +2,9 @@
   "lastChangelogVersion": "0.78.1",
   "defaultProvider": "llamacpp",
   "defaultModel": "Qwen3.8-27B",
+  "modelThinkingLevels": {
+    "llamacpp/Qwen3.8-27B": "low"
+  },
   "compaction": {
     "enabled": true,
     "reserveTokens": 16384,

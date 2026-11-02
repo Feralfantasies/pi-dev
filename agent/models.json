@@ -6,7 +6,8 @@
       "apiKey": "llamacpp",
       "compat": {
         "supportsDeveloperRole": true,
-        "supportsReasoningEffort": false
+        "supportsReasoningEffort": false,
+        "thinkingTokenBudgetField": "thinking_budget_tokens"
       },
       "models": [
         {
@@ -14,8 +15,8 @@
           "name": "Qwen3.8-27B Q4_K_M (llama.cpp on V100)",
           "reasoning": true,
           "input": ["text"],
-          "contextWindow": 65000,
-          "maxTokens": 65000
+          "contextWindow": 72000,
+          "maxTokens": 72000
         }
       ]
     }
