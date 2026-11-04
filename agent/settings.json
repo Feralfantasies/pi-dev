@@ -10,8 +10,8 @@
     "reserveTokens": 16384,
     "modelOverrides": {
       "llamacpp/Qwen3.8-27B": {
-        "reserveTokens": 25000,
-        "keepRecentTokens": 8192
+        "reserveTokens": 32000,
+        "keepRecentTokens": 12288
       }
     }
   },
